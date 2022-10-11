@@ -1,0 +1,37 @@
+.wrapper[b-n2o7xscfoj] {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    flex-direction:column;
+    gap:10rem;
+}
+
+table[b-n2o7xscfoj] {
+    border-radius: 0.5rem;
+    border-collapse: separate !important;
+    border-spacing:0;
+}
+
+th[b-n2o7xscfoj]{
+    padding:2px;
+    padding-right:30px;
+}
+
+tr[b-n2o7xscfoj]{
+   height:30px;
+   padding:10px;
+}
+
+tr:nth-child(even)[b-n2o7xscfoj] {
+    background-color: #e4eaf5;
+}
+
+.top-row[b-n2o7xscfoj] {
+    font-size: 16px;
+    font-weight:300;
+    color: #fff;
+    background-color: #36304a;
+    padding: 10px;
+}

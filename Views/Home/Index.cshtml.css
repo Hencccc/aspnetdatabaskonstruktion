@@ -1,0 +1,37 @@
+﻿.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    flex-direction:column;
+    gap:10rem;
+}
+
+table {
+    border-radius: 0.5rem;
+    border-collapse: separate !important;
+    border-spacing:0;
+}
+
+th{
+    padding:2px;
+    padding-right:30px;
+}
+
+tr{
+   height:30px;
+   padding:10px;
+}
+
+tr:nth-child(even) {
+    background-color: #e4eaf5;
+}
+
+.top-row {
+    font-size: 16px;
+    font-weight:300;
+    color: #fff;
+    background-color: #36304a;
+    padding: 10px;
+}
