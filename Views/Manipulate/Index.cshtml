@@ -1,0 +1,23 @@
+﻿<div class="wrapper">
+    <div>
+        <p>Insert data for a new Spann!</p>
+        <form method="post" action="@Url.Action("InsertSpann", "Manipulate")">
+            <input type="text" placeholder="Name" name="Name" />
+            <input type="number" placeholder="Capacity" name="Capacity" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <p>Choose a Spann to delete!</p>
+        <form method="post" action="@Url.Action("DeleteSpann", "Manipulate")">
+            <select name="spann">
+                @foreach (var row in ViewBag.SpannTable.Rows)
+                {
+                    <option value="@row["Namn"]">@row["Namn"]</option>
+                }
+            </select>
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+</div>

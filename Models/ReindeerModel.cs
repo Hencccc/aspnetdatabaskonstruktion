@@ -6,17 +6,17 @@ namespace databaskonstruktion.Models
     public class ReindeerModel
     {
         private IConfiguration _configuration;
-        private string connectionString;
+        private string _connectionString;
 
         public ReindeerModel(IConfiguration configuration)
         {
             _configuration = configuration;
-            connectionString = _configuration["ConnectionString"];
+            _connectionString = _configuration["ConnectionString"];
         }
 
         public DataTable GetAllReindeers()
         {
-            MySqlConnection dbcon = new MySqlConnection(connectionString);
+            MySqlConnection dbcon = new MySqlConnection(_connectionString);
             dbcon.Open();
             MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM Ren;", dbcon);
             DataSet ds = new DataSet();

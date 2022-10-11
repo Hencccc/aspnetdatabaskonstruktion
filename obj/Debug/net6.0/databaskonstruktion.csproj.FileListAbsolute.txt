@@ -46,3 +46,4 @@ D:\Programmering\databaskonstruktion\databaskonstruktion\obj\Debug\net6.0\databa
 D:\Programmering\databaskonstruktion\databaskonstruktion\obj\Debug\net6.0\databaskonstruktion.genruntimeconfig.cache
 D:\Programmering\databaskonstruktion\databaskonstruktion\obj\Debug\net6.0\ref\databaskonstruktion.dll
 D:\Programmering\databaskonstruktion\databaskonstruktion\obj\Debug\net6.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
+D:\Programmering\databaskonstruktion\databaskonstruktion\obj\Debug\net6.0\scopedcss\Views\Manipulate\Index.cshtml.rz.scp.css

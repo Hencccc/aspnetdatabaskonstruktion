@@ -6,17 +6,17 @@ namespace databaskonstruktion.Models
     public class FoodModel
     {
         private IConfiguration _configuration;
-        private string connectionString;
+        private string _connectionString;
 
         public FoodModel(IConfiguration configuration)
         {
             _configuration = configuration;
-            connectionString = _configuration["ConnectionString"];
+            _connectionString = _configuration["ConnectionString"];
         }
 
         public DataTable GetAllFood()
         {
-            MySqlConnection dbcon = new MySqlConnection(connectionString);
+            MySqlConnection dbcon = new MySqlConnection(_connectionString);
             dbcon.Open();
             MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM Mat;", dbcon);
             DataSet ds = new DataSet();
