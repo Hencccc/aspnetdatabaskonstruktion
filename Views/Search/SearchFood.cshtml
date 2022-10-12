@@ -1,0 +1,34 @@
+﻿@if (ViewBag.SearchFood != null && ((System.Data.DataTable)ViewBag.SearchFood).Rows.Count > 0)
+{
+    <div class="wrapper">
+        <table>
+            <tr class="top-row">
+                @foreach (var column in ViewBag.SearchFood.Columns)
+                {
+                    <td>@column.ColumnName</td>
+                }
+            </tr>
+
+            @foreach (var row in ViewBag.SearchFood.Rows)
+            {
+                <tr>
+                    @for (int i = 0; i < ViewBag.SearchFood.Columns.Count; i++)
+                    {
+                        <td>@row[i]</td>
+                    }
+                </tr>
+            }
+        </table>
+    </div>
+}
+else
+{
+    <p>No results were found by the given magic level, please try again!</p>
+    <div class="wrapper">
+        <p>Search for food by their magic level!</p>
+        <form method="post" action="@Url.Action("SearchFood", "Search")">
+            <input type="number" name="magic" placeholder="Magic level" />
+            <button type="submit">Search</button>
+        </form>
+    </div>
+}

@@ -42,6 +42,44 @@ tr:nth-child(even)[b-n2o7xscfoj] {
     flex-direction: column;
     gap: 5rem;
 }
+/* _content/databaskonstruktion/Views/Search/Index.cshtml.rz.scp.css */
+.wrapper[b-cusjk1gqkk] {
+    display: flex;
+    justify-content: center;
+}
+/* _content/databaskonstruktion/Views/Search/SearchFood.cshtml.rz.scp.css */
+.wrapper[b-esnob35yvv]{
+    display:flex;
+    justify-content:center;
+}
+
+table[b-esnob35yvv] {
+    border-radius: 0.5rem;
+    border-collapse: separate !important;
+    border-spacing: 0;
+}
+
+th[b-esnob35yvv] {
+    padding: 2px;
+    padding-right: 30px;
+}
+
+tr[b-esnob35yvv] {
+    height: 30px;
+    padding: 10px;
+}
+
+    tr:nth-child(even)[b-esnob35yvv] {
+        background-color: #e4eaf5;
+    }
+
+.top-row[b-esnob35yvv] {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    background-color: #36304a;
+    padding: 10px;
+}
 /* _content/databaskonstruktion/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
