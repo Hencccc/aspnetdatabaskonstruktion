@@ -30,7 +30,7 @@ namespace databaskonstruktion.Models
         public DataTable SearchFood(int magic)
         {
             MySqlConnection dbcon = new MySqlConnection(_connectionString);
-            dbcon.Open(); 
+            dbcon.Open();
             MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM Mat where Maginivå=@MAGIC;", dbcon);
             adapter.SelectCommand.Parameters.AddWithValue("@MAGIC", magic);
             DataSet ds = new DataSet();

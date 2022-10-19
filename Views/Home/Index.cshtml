@@ -4,43 +4,43 @@
 
 <body>
 
-<div class="wrapper">
-    <table>
-        <tr class="top-row">
-            @foreach(var column in ViewBag.ReindeerTable.Columns)
-            {
-                <th>@column.ColumnName</th>
-            }
-        </tr>
-
-        @foreach(var row in ViewBag.ReindeerTable.Rows)
-        {
-            <tr>
-                @for (int i = 0; i < ViewBag.ReindeerTable.Columns.Count; i++)
+    <div class="wrapper">
+        <table>
+            <tr class="top-row">
+                @foreach (var column in ViewBag.ReindeerTable.Columns)
                 {
-                    <td>@row[i]</td>
+                    <th>@column.ColumnName</th>
                 }
             </tr>
-        }
-    </table>
 
-    <table>
-        <tr class="top-row">
-            @foreach(var column in ViewBag.FoodTable.Columns)
+            @foreach (var row in ViewBag.ReindeerTable.Rows)
             {
-                <th>@column.ColumnName</th>
+                <tr>
+                    @for (int i = 0; i < ViewBag.ReindeerTable.Columns.Count; i++)
+                    {
+                        <td>@row[i]</td>
+                    }
+                </tr>
             }
-        </tr>
+        </table>
 
-        @foreach(var row in ViewBag.FoodTable.Rows)
-        {
-            <tr>
-                @for (int i = 0; i < ViewBag.FoodTable.Columns.Count; i++)
+        <table>
+            <tr class="top-row">
+                @foreach (var column in ViewBag.FoodTable.Columns)
                 {
-                    <td>@row[i]</td>
+                    <th>@column.ColumnName</th>
                 }
             </tr>
-        }
-    </table>
-</div>
+
+            @foreach (var row in ViewBag.FoodTable.Rows)
+            {
+                <tr>
+                    @for (int i = 0; i < ViewBag.FoodTable.Columns.Count; i++)
+                    {
+                        <td>@row[i]</td>
+                    }
+                </tr>
+            }
+        </table>
+    </div>
 </body>
